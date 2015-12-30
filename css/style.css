@@ -1,13 +1,70 @@
 html {
-  font-size: 62.5%; }
+    font-size: 62.5%; 
+    width: 100%;
+    height: 100%;
+}
 
 body {
-  background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  font-size: 1.4rem;
-  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
 
-*, *::before, *::after {
-  box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; }
+
+.warpper {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.heading {
+    position: relative;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 auto;
+}
+.logo {
+    display: block;
+    margin: 10px auto;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+.logo_link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 100px;
+    text-align:center;
+    letter-spacing: 5px;
+}
+.g_navi {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+.navi-menu > * {
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.g_content {
+    min-height: 600px; /* debug */
+    margin: 30px auto 40px;
+    border: 1px solid black;
+}
+.footer {
+    width: 100%;
+    border: 1px solid black;
+    padding: 45px 20px 45px;
+}
+.copyright {
+    display: block;
+    padding: 5px 2px 5px;
+}
