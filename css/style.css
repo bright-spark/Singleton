@@ -21,50 +21,91 @@ body {
 
 .heading {
     position: relative;
-    border: 1px solid black;
     padding: 5px;
     margin: 0 auto;
+    box-shadow: 0 0 10px 1px #e3e3e3;
 }
 .logo {
     display: block;
     margin: 10px auto;
     height: 100px;
     width: 100px;
-    border: 1px solid black;
-    overflow: hidden;
+/*    border: 1px solid black;
+    overflow: hidden; 
     text-indent: 100%;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
 .logo_link {
     display: block;
     height: 100%;
     width: 100%;
     line-height: 100px;
+    text-decoration: none;
     text-align:center;
     letter-spacing: 5px;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif; /* google web font */
+    color: #000000;
 }
 .g_navi {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
     text-align: center;
-    border: 1px solid black;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
 }
-.navi-menu > * {
+.g_navi:before,
+.g_navi:after {
+    content:'';
+    border: 1px solid #000000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.g_navi:after {
+    bottom: 0px;
+}
+.g_nav_a {
+    text-decoration: none;
+    transition-property: background, opacity, left;
+    transition-duration: 0.9s, 1.3s;
+    color: #000000;
     display: inline-block;
-    letter-spacing: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.g_nav_a:hover {
+    opacity: 0.6;
+    background: #FFEDC6;
+}
+
+.navi-menu {
+    font-size: 1.8rem;
+    font-family: 'Alegreya SC', serif;    /* google web font */
+
+}
+.nav-item {
+    display: inline-block;
+    letter-spacing: 3px;
     margin-left: 20px;
+    line-height: 4.5rem;
+    margin-right: 3.5rem;
 }
 
 .g_content {
     min-height: 600px; /* debug */
     margin: 30px auto 40px;
-    border: 1px solid black;
+    box-shadow: 0 0 10px 1px #e3e3e3;
 }
 .footer {
     width: 100%;
-    border: 1px solid black;
     padding: 45px 20px 45px;
+    box-shadow: 0 0 10px 1px #e3e3e3;
+    background: rgba(61, 64, 66, 0.07);
 }
-.copyright {
+.companyCopy {
     display: block;
     padding: 5px 2px 5px;
 }
