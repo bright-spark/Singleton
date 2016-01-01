@@ -58,7 +58,7 @@ body {
 .g_navi:before,
 .g_navi:after {
     content:'';
-    border: 1px solid #000000;
+    border: 1px solid #333;
     position: absolute;
     right: 0;
     left: 0;
@@ -69,16 +69,29 @@ body {
 }
 .g_nav_a {
     text-decoration: none;
-    transition-property: background, opacity, left;
-    transition-duration: 0.9s, 1.3s;
+    transition-property: color, background, opacity, left;
+    transition-duration: 0.8s, 0.8s, 0.1s, 2.0s;
+    transition-timing-function:  cubic-bezier(0.23, 1, 0.32, 1);
     color: #000000;
     display: inline-block;
     padding: 5px;
     margin-bottom: 10px;
+    text-align: center;
 }
 .g_nav_a:hover {
-    opacity: 0.6;
-    background: #FFEDC6;
+    opacity: 0.8;
+    background: #800000;
+    color: #FFF;
+    left: 0;
+}
+.g_nav_a:hover:after {
+    display: block;
+    position: absolute;
+    bottom: 14.5px;
+    content: '';
+/*    width: 70px;
+    height: 0;
+    border-bottom: 3px solid black; */
 }
 
 .navi-menu {
@@ -88,22 +101,34 @@ body {
 }
 .nav-item {
     display: inline-block;
-    letter-spacing: 3px;
-    margin-left: 20px;
-    line-height: 4.5rem;
+    letter-spacing: 5px;
+    line-height: 2.5rem;
     margin-right: 3.5rem;
 }
 
 .g_content {
     min-height: 600px; /* debug */
-    margin: 30px auto 40px;
-    box-shadow: 0 0 10px 1px #e3e3e3;
+    margin: 30px auto 0;
+    background: #F7F7F7;
 }
+.g_content p {
+    padding: 100px;
+    transition: padding 0.4s;
+}
+
 .footer {
     width: 100%;
-    padding: 45px 20px 45px;
-    box-shadow: 0 0 10px 1px #e3e3e3;
     background: rgba(61, 64, 66, 0.07);
+}
+.f_div {
+    padding: 45px 20px 45px;
+}
+.footer:before {
+    content: '';
+    display: block;
+/*    border-bottom: 1.5px solid #AA2C29; */
+    opacity: 0.7;
+    box-shadow: 0px 1px 12px 10px #FFFFFF;
 }
 .companyCopy {
     display: block;
