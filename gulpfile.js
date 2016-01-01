@@ -28,6 +28,7 @@ gulp.task('server', function() {
    gulp.src('./')
     .pipe(webserver({
         livereload: true,
+        port: 9999,
     }))
 //    .pipe(plumber({
 //        errorHandler: notify.onError("<%= error.message %>")
