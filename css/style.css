@@ -24,17 +24,18 @@ body {
     clear: both;
 }
 /* ===================================================================== Util end */
-
-.warpper {
+/* ===================================================================== Wrapper start */
+.wrapper {
     position: relative;
     height: 100%;
     width: 100%;
 }
 
-/* ===================================================================== header start */
+/* ===================================================================== Wrapper start */
 .heading {
     position: relative;
     margin-top: 50px;
+    font-size: 4rem;
 }
 .logo {
     display: block;
@@ -110,17 +111,64 @@ body {
 
 /* ===================================================================== header end */
 
-/* ===================================================================== g_content start */
-.g_content {
-    min-height: 600px; /* debug */
-    margin: 30px auto 0;
-    background: #F7F7F7;
+/* ===================================================================== works start */
+.works {
+    padding: 80px 0;
+    background-color: #FFF;
+    color: #333;
 }
-.g_content p {
-    padding: 100px;
-    transition: padding 0.4s;
+.works-wrapper {
+    display: table;
+    width: 80%;
+    margin: 50px auto 0;
+    table-layout: fixed;
 }
-/* ===================================================================== g_content end */
+.work-box {
+    display: table-cell;
+}
+.work-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    border: 4px solid;
+    border-radius: 50%;
+    font-size: 8rem;
+    line-height: 142px;
+    color: rgba(80, 169, 40, 0.61);
+}
+.work-title {
+    margin: 0 20px 20px;
+    font-size: 2rem;
+}
+.work-text {
+    margin: 0 20px;
+    line-height: 2;
+}
+    /* ===================================================================== works end */
+
+/* ===================================================================== contact start */
+.contact {
+    padding: 80px 0 150px;
+    background: #151515 url("../images/bg.png") no-repeat fixed left bottom;
+    background-size: cover;
+    color: #FFF;
+}
+.contact-form {
+    width: 50%;
+    margin: 50px auto 0;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+}
+    /* ===================================================================== contact  end */
 
 /* ===================================================================== footer start */
 .footer {
@@ -135,7 +183,6 @@ body {
     display: block;
 /*    border-bottom: 1.5px solid #AA2C29; */
     opacity: 0.7;
-    box-shadow: 0px 1px 12px 10px #FFFFFF;
 }
 .companyCopy {
     display: block;
