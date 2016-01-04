@@ -2,6 +2,12 @@ var gulp      = require('gulp');
 var sass      = require('gulp-sass');
 var webserver = require('gulp-webserver');
 
+var server_middle = function(req, res, next) {
+//    console.log(req);
+    console.log(req);   
+    next();
+};
+
 gulp.task('concat', function(){
     gulp.src('./src/js/easing/*.js')
         .pipe(concat('easing.js'))
@@ -29,6 +35,7 @@ gulp.task('server', function() {
     .pipe(webserver({
         livereload: true,
         port: 9999,
+        middleware: server_middle,
     }))
 //    .pipe(plumber({
 //        errorHandler: notify.onError("<%= error.message %>")
